@@ -1,0 +1,41 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#heart-checkbox {
+  display: none;
+}
+
+.full-heart {
+  display: none;
+  opacity: 0.5;
+}
+
+#heart-checkbox:checked + label > i.full-heart {
+  display: inline-block;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transition: all 500ms ease-in-out 0ms;
+  animation: full 0.5s;
+  opacity: 1;
+}
+
+@keyframes full {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#heart-checkbox:checked + label > i.empty-heart {
+  display: none;
+}

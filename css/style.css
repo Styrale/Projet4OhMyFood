@@ -10,10 +10,6 @@
 	/* var(--drak-grey-color) */
 }
 
-@font-face {
-	font-family: "Roboto";
-	src: url("./css/Roboto.ttf");
-}
 
 body {
 	margin: 0px;
@@ -67,7 +63,7 @@ a:active {
 	text-decoration: none;
 }
 
-a:visited {
+.presentation a{
 	text-decoration: none;
 	color: rgb(255, 255, 255);
 }
@@ -154,6 +150,34 @@ header {
 	color: rgb(0, 0, 0);
 }
 
+.fa-utensils {
+	color: #ffffff;
+}
+
+.fa-handshake-angle {
+	color: #ffffff;
+}
+
+.fa-store {
+	color: #804bb4
+}
+
+.fa-list {
+	color: #616161
+}
+
+.fa-mobile-screen {
+	color: #616161;
+}
+
+.fa-arrow-left {
+	color: #353535;
+	margin-left: 20px;
+}
+
+.fa-circle-check {
+	color: #ffffff;
+}
 
 .icon-search {
 	text-align: center;
@@ -407,7 +431,7 @@ button[type="submit"] {
 	justify-content: space-between;
 }
 
-.page-menu button {
+.page-menu-button {
 	display: flex;
 	position: relative;
 	overflow: hidden;

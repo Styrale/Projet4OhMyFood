@@ -10,12 +10,11 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/08f4fafe81.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="loader">
-        <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood" class="logo">
+        <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood">
     </div>
     <header>
         <div class="navigation-container">
@@ -37,13 +36,18 @@
                 <h2>Fonctionnement</h2>
                 <div class="fonctionnement-buttons">
                     <button>
-                        <span class="pastille">1</span> <i class="fa-solid fa-mobile-screen fa-xl"></i>Choisissez un restaurant
+                        <span class="pastille">1</span> <i class="fa-solid fa-mobile-screen fa-xl"
+                            style="color: #616161;"></i>Choisissez un
+                        restaurant
                     </button>
                     <button>
-                        <span class="pastille">2</span><i class="fa-solid fa-list fa-xl"></i>Composez votre menu
+                        <span class="pastille">2</span><i class="fa-solid fa-list fa-xl" style="color: #616161"></i>Composez
+                        votre menu
                     </button>
                     <button>
-                        <span class="pastille">3</span><i class="fa-sharp fa-solid fa-store fa-xl"></i>Dégustez au restaurant
+                        <span class="pastille">3</span><i class="fa-sharp fa-solid fa-store fa-xl"
+                            style="color: #804bb4"></i>Dégustez au
+                        restaurant
                     </button>
                 </div>
             </div>
@@ -51,64 +55,81 @@
         <section class="menu" id="menus">
             <h2>Restaurants</h2>
             <div class="menu-item">
-                <a class="card" href="palette-du-gout.html">
+                <article class="card">
                     <div class="card-content">
                         <p class="new">Nouveau</p>
-                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            alt="Image d'une assiette gastronomique">
+                        <a href="palette-du-gout.html"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+                            alt="Image d'une assiette gastronomique"></a>                 
                         <div class="card-favorite">
                             <h3 class="card-title">La palette du goût</h3>
                             <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-palette" />
+                                <label for="heart-checkbox-palette">
                                     <i class="fa-2x fa-solid fa-heart full-heart"></i>
                                     <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
                             </div>
                             <p class="card-subtitle">Ménilmontant</p>
                         </div>
                     </div>
-                </a>
-                <a class="card" href="note-enchantee.html">
+                </article>
+                <article class="card">
                     <div class="card-content">
                         <p class="new">Nouveau</p>
-                        <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                            alt="Image d'une assiette gastronomique">
+                        <a href="note-enchantee.html"><img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="Image d'une assiette gastronomique">
+                        </a>
                         <div class="card-favorite">
                             <h3 class="card-title">La note enchantée</h3>
                             <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-note" />
+                                <label for="heart-checkbox-note">
                                     <i class="fa-2x fa-solid fa-heart full-heart"></i>
                                     <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
                             </div>
                             <p class="card-subtitle">Charonne</p>
                         </div>
                     </div>
-                </a>
-                <a class="card" href="la-francaise.html">
+                </article>
+                <article class="card">
                     <div class="card-content">
-                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            alt="Image d'une assiette gastronomique">
+                        <a href="la-francaise.html">
+                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="Image d'une assiette gastronomique">
+                        </a>
                         <div class="card-favorite">
                             <h3 class="card-title">A la française</h3>
                             <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-francaise" />
+                                <label for="heart-checkbox-francaise">
                                     <i class="fa-2x fa-solid fa-heart full-heart"></i>
                                     <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
                             </div>
                             <p class="card-subtitle">Cité Rouge</p>
                         </div>
                     </div>
-                </a>
-                <a class="card" href="delice-des-sens.html">
+                </article>
+                <article class="card">
                     <div class="card-content">
-                        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            alt="Image d'une assiette gastronomique">
+                        <a href="delice-des-sens.html">
+                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Image d'une assiette gastronomique">
+                        </a>
                         <div class="card-favorite">
                             <h3 class="card-title">Le délice des sens</h3>
                             <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-delice" />
+                                <label for="heart-checkbox-delice">
                                     <i class="fa-2x fa-solid fa-heart full-heart"></i>
                                     <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
                             </div>
                             <p class="card-subtitle">Folie-Méricourt</p>
                         </div>
                     </div>
-                </a>
+                </article>
             </div>
         </section>
     </main>
@@ -116,9 +137,9 @@
         <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood" class="logo-footer">
         <div class="footer-all">
             <div class="infos-footer">
-                <p><i class="fa-solid fa-utensils fa-lg"></i> Proposer un
+                <p><i class="fa-solid fa-utensils fa-lg" style="color: #ffffff;"></i> Proposer un
                     restaurant</p>
-                <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
+                <p><i class="fa-solid fa-handshake-angle " style="color: #ffffff;"></i> Devenir partenaire</p>
             </div>
             <div class="infos-footer-no-logo">
                 <p>Mentions légales</p>

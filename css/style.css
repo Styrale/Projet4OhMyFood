@@ -713,6 +713,26 @@ footer {
 	color: white;
 }
 
+#heart-checkbox {
+	display: none;
+}
+
+#heart-checkbox-palette {
+	display: none;
+}
+
+#heart-checkbox-note {
+	display: none;
+}
+
+#heart-checkbox-francaise {
+	display: none;
+}
+
+#heart-checkbox-delice {
+	display: none;
+}
+
 .heart {
 	display: flex;
 }
@@ -726,11 +746,7 @@ footer {
 	color: #bfbfbf;
 }
 
-.heart:hover i.empty-heart {
-	display: none;
-  }
-
-.heart:hover i.full-heart {
+#heart-checkbox:checked+label>i.full-heart {
 	display: inline-block;
 	background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
 	background-clip: text;
@@ -741,7 +757,59 @@ footer {
 	transition: all 500ms ease-in-out 0ms;
 	animation: full 0.5s;
 	opacity: 1;
-  }
+}
+
+#heart-checkbox-palette:checked+label>i.full-heart {
+	display: inline-block;
+	background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	transition: all 500ms ease-in-out 0ms;
+	animation: full 0.5s;
+	opacity: 1;
+}
+
+#heart-checkbox-note:checked+label>i.full-heart {
+	display: inline-block;
+	background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	transition: all 500ms ease-in-out 0ms;
+	animation: full 0.5s;
+	opacity: 1;
+}
+
+#heart-checkbox-francaise:checked+label>i.full-heart {
+	display: inline-block;
+	background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	transition: all 500ms ease-in-out 0ms;
+	animation: full 0.5s;
+	opacity: 1;
+}
+
+#heart-checkbox-delice:checked+label>i.full-heart {
+	display: inline-block;
+	background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	transition: all 500ms ease-in-out 0ms;
+	animation: full 0.5s;
+	opacity: 1;
+}
 
 @keyframes full {
 	from {
@@ -751,6 +819,26 @@ footer {
 	to {
 		opacity: 1;
 	}
+}
+
+#heart-checkbox:checked+label>i.empty-heart {
+	display: none;
+}
+
+#heart-checkbox-palette:checked+label>i.empty-heart {
+	display: none;
+}
+
+#heart-checkbox-note:checked+label>i.empty-heart {
+	display: none;
+}
+
+#heart-checkbox-francaise:checked+label>i.empty-heart {
+	display: none;
+}
+
+#heart-checkbox-delice:checked+label>i.empty-heart {
+	display: none;
 }
 
 .slider-menu {
@@ -805,6 +893,9 @@ footer {
 		opacity: 1;
 	}
 }
+
+
+
 
 
 
